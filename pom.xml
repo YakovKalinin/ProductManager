@@ -80,8 +80,8 @@
                             <limits>
                                 <limit>
                                     <counter>BRANCH</counter>
-                                    <value>COVEREDRATIO</value>
-                                    <minimum>1.0</minimum>
+                                    <value>COVERED RATIO</value>
+                                    <minimum>0.0</minimum>
                                 </limit>
                             </limits>
                         </rule>

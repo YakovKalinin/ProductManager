@@ -8,8 +8,6 @@ import ru.netology.repository.ProductRepository;
 public class ProductManager {
     private ProductRepository repository;
 
-    Product[] products = new Product[0];
-
     public ProductManager(ProductRepository repository) {
         this.repository = repository;
     }
@@ -38,9 +36,6 @@ public class ProductManager {
         if (product instanceof Book) {
             Book book = (Book) product;
             if (book.getAuthor().contains(search)) {
-                return true;
-            }
-            if (book.getName().contains(search)) {
                 return true;
             }
             return false;

@@ -43,4 +43,16 @@ class ProductManagerTest {
         Product[] actual = manager.searchBy("third");
         assertArrayEquals(expected, actual);
     }
+    @Test
+    void shouldReturnByAuthor() {
+        Product[] expected = {firstBook, secondBook};
+        Product[] actual = manager.searchBy("Firstbookov");
+        assertArrayEquals(expected, actual);
+    }
+    @Test
+    void shouldReturnByManufacturer() {
+        Product[] expected = {firstSmartphone};
+        Product[] actual = manager.searchBy("OOO");
+        assertArrayEquals(expected, actual);
+    }
 }
